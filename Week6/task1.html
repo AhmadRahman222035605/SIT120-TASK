@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Task 1 Week 6 </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+    <body>
+        <div id="app">
+            <p> Email </p>
+            <input v-model="email"
+            type="text"
+            placeholder="Enter your email"
+            />
+            <p>Password</p>
+            <input 
+            v-model="password"
+            type="password"
+            placeholder="Enter your passowrd"
+            />
+        
+
+        </div>
+    </body>
+</html>
+
+<script>
+    var app = new Vue({
+        el:'#app',
+        data: {
+            email: "Ahmad",
+            password: "1234",
+        },
+    });
+</script>

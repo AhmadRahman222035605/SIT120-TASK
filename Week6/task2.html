@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Task 1 Week 6 </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+    <input type="checkbox" id="ahmad" value="Ahmad" v-model="checkNames">
+    <label for="ahmad">Ahmad</label>
+    <input type="checkbox" id="rahman" value="Rahman" v-model="checkNames">
+    <label for="rahman">Rahman</label>
+    <input type="checkbox" id="john" value="John" v-model="checkNames">
+    <label for="john">John</label>
+<br>
+<span>Names that are checked: {{ checkNames }}</span>
+
+</div>
+</body>
+</html>
+
+<script>
+var app =  new Vue({
+el: '#app',
+data: {
+    checkNames: [],
+  },
+});
+</script>
