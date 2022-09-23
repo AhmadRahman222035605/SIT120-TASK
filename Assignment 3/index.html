@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerCon</title>
+
+    <link rel="stylesheet" href="./style.css"/>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> <!--imports from library-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--imports from library-->
+</head>
+<body>
+<div class="back">  
+
+    
+    <div id="nav" style="margin-top: 0;">
+                                                <!--Creates the navigation bar using the library-->
+        <nav class="navbar navbar-expand navbar-light" style="background-color: rgba(12, 245, 199, 0.409); height: 60px;">
+            <a href="./index.html">
+                <!--Logo button which takes you back to the index page-->
+                <button id="GC" class="btn btn-primary btn-lg">GamerCon</button>
+            </a>
+
+
+            <input id="search" type="text" placeholder="Search"> <!--Search bar added. Without funtionality-->
+            <button id="sub" type="submit">submit</button>
+            <a href="./inbox.html">
+                <!--Inbox button which takes you back to the inbox page-->
+                <button id="inbox" class="btn btn-primary btn-lg">INBOX</button>
+            </a>
+        </nav>
+    </div>
+
+
+    <div id="app">
+        <card1></card1>         <!--Calls the componenets created in App.js file to display the posts in the feed-->
+        <card2></card2>
+        <card3> </card3>
+    </div>
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+<script src="app.js" ></script>
+</body>
+
+
+
+
+</html>
